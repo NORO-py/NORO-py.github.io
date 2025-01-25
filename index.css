@@ -1,0 +1,112 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url("background.png") no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0);
+    color: rgb(252, 252, 252);
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 5px 0 0;
+}
+
+/* Contenido principal */
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Galería de imágenes */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.image {
+    background: #daa908;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.image p {
+    margin: 10px 0 0;
+    font-weight: bold;
+}
+
+/* Contacto */
+aside {
+    background: rgba(26, 23, 23, 0.8); /* Transparencia del marco del contacto */
+    border-left: 3px solid #333333; /* Línea vertical */
+    position: fixed;
+    top: 1px; /* Justo debajo del header */
+    bottom: 0;
+    right: 0;
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-shadow: -4px 0 6px rgba(0, 0, 0, 0.1);
+    opacity: 0.9; /* Nivel de transparencia del marco del contacto */
+}
+
+aside button {
+    background: #daa908;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-bottom: 20px;
+}
+
+aside button:hover {
+    background: #45a049;
+}
+
+/* Información de contacto */
+.contact-info {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
