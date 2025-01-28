@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Construcciones Profesionales</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
     <header>
@@ -14,33 +14,39 @@
     <main>
         <div class="gallery">
             <div class="image">
-                <img src="fotos/foto1.png" alt="Construcción 1">
+                <img src="./fotos/foto1.png" alt="Construcción 1" onclick="openModal(this)">
             </div>
             <div class="image">
-                <img src="fotos/foto2.png" alt="Construcción 2">
+                <img src="./fotos/foto2.png" alt="Construcción 2" onclick="openModal(this)">
             </div>
             <div class="image">
-                <img src="fotos/foto3.png" alt="Construcción 3">
+                <img src="./fotos/foto3.png" alt="Construcción 3" onclick="openModal(this)">
             </div>
             <div class="image">
-                <img src="fotos/foto4.png" alt="Construcción 4">
+                <img src="./fotos/foto4.png" alt="Construcción 4" onclick="openModal(this)">
             </div>
             <div class="image">
-                <img src="fotos/foto5.png" alt="Construcción 5">
+                <img src="./fotos/foto5.png" alt="Construcción 5" onclick="openModal(this)">
             </div>
             <div class="image">
-                <img src="fotos/foto6.png" alt="Construcción 6">
+                <img src="./fotos/foto6.png" alt="Construcción 6" onclick="openModal(this)">
             </div>
             <div class="image">
-                <img src="fotos/foto7.png" alt="Construcción 6">
+                <img src="./fotos/foto7.png" alt="Construcción 7" onclick="openModal(this)">
             </div>
             <div class="image">
-                <img src="fotos/foto8.png" alt="Construcción 6">
+                <img src="./fotos/foto8.png" alt="Construcción 8" onclick="openModal(this)">
             </div>
             <div class="image">
-                <img src="fotos/foto9.png" alt="Construcción 6">
+                <img src="./fotos/foto9.png" alt="Construcción 9" onclick="openModal(this)">
             </div>
         </div>
     </main>
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+    <script src="./index.js"></script>
 </body>
 </html>
